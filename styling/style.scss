@@ -1,0 +1,123 @@
+
+
+
+
+  $primary-color: #efefef;
+  $primary-light: lighten(#efefef, 40%);
+  $primary-dark: darken(#efefef, 40%);
+  $secondary-color: #35b5e6;
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    
+    color:$primary-color;
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+
+    background: url("image/hero2.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 3rem;
+  }
+  &.sm-heading {
+    font-size: 1rem;
+    color:$secondary-color;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(
+      lighten($primary-dark, 2),
+      0.5
+    ); //lighten background and make it transparent
+  }
+}
+nav {
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .logo{
+        float:left;
+        width:50px;
+        margin-left:3em;
+        margin-top: 1em;
+    }
+    ul {
+    float:right;
+      text-align: center;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 1em;
+      padding: 15px;
+      li {
+        display: inline;
+        
+        font-size: .9rem;
+        a {
+          color: #f2f2f2;
+          text-decoration: none;
+          padding: 14px;
+          &:hover {
+            background-color: #111;
+          }
+        }
+      }
+    }
+  }
+
+
+a {
+  color:$primary-color;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+main {
+    padding: 4rem;
+    //height: 100%;
+    min-height: calc(100vh-60px);
+  
+    .icons {
+      margin-top: 1rem;
+  
+      a {
+        padding: 0.4rem;
+  
+        &:hover {
+          color: $secondary-color;
+      
+        }
+      }
+    }
+  
+    &#home {
+      overflow: hidden;
+      h1 {
+        margin-top: 20vh;
+      }
+    }
+  }
+  
